@@ -16,56 +16,137 @@
    
  }
 
-h2 {
+ h2 {
     text-align: center;
 }
+ 
+ .dotted {
+    text-decoration: underline dotted;
+ }
 
+ .background-color2 {
+    background-color: rgb(241, 239, 239); 
+    padding-left: 40px;
+    padding-right: 40px;
+ }
+ 
+.background-color {
+    color:rgb(223, 53, 53);
+    background-color: rgb(202, 199, 199);
+}
+
+.code {
+    background-color: rgb(192, 190, 190);
+}
 </style>
 
 <body>
-    <a href="index.html">Home</a>
 
+ <div class="background-color2">
+
+    <a href="index.html">Home</a>
   <h1>HTML Tutorial</h1>
 
   <hr>
 
-<h2>What is HTML?</h2>
-
-
-Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.
+<h2>What is <abr title="HyperText Markup language">HTML</abr>?</h2>
 
 <p>
-Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. 
+<b>Hypertext Markup Language (<abr title="HyperText Markup language"><span class="dotted">HTML</span></abr>)
 
-HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+</b> is the standard markup 
+
+language for creating web pages and web applications.
 </p>
 
-HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into 
+<p>
+Web browsers receive <abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> documents 
 
-the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, 
+from a web server or from 
+
+local storage and render the documents into multimedia web pages. 
+
+<abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> describes the structure of a web
+
+page semantically and 
+
+originally included cues for the appearance of the document.
+
+<abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> elements are the building blocks of 
+
+<abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> pages. 
+
+With <abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> constructs, images 
+
+and other objects such as interactive forms may be embedded into 
+
+the rendered page. <abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> provides a means to create structured 
+
+documents by denoting structural semantics for text such as headings, paragraphs, 
 
 lists, links, quotes and other items. 
 
-<p>
-HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> directly introduce content into the page. 
+   <abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> elements are delineated by tags, written using angle 
 
-Other tags such as <p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the 
+brackets. Tags such as <span class="background-color">&lt;img/&gt;</span> and 
+<span class="background-color"> &lt;input/&gt;</span> directly introduce content into the page. 
 
-    HTML tags, but use them to interpret the content of the page
-</p>
+Other tags such as <span class="background-color"> &lt;p&gt;</span> surround and provide information about document text and may include other tags as 
+    
+sub-elements. Browsers do not display the 
+
+    <abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> tags, but use them to interpret the content of the page.
+
+    </p>
+
 
 <hr>
 
  <h2>Markup</h2>
 
-HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references 
+ <p>
+<abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> markup consists of several key components, including those
 
-and entity references. HTML tags most commonly come in pairs like <h1> and </h1>, although some represent empty elements and so are unpaired, for 
+called tags (and their attributes), character-based data types, character references 
 
-example <img>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).
+and entity references. <abr title="HyperText Markup language">
+    
+    <abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> tags most commonly come in
+    
+    pairs like <span class="background-color">&lt;h1&gt;</span> 
 
-Another important component is the HTML document type declaration, which triggers standards mode rendering.
+    and<span class="background-color">&lt;/h1&gt;</span>, 
+    
+    although some represent empty elements and so are unpaired, for 
 
+example <span class="background-color">&lt;img&gt;</span>. The first tag in such a pair is the start tag, and the second is the end tag 
+
+(they are also called opening tags and closing tags).
+
+</p>
+
+<p>
+Another important component is the 
+<abr title="HyperText Markup language"><span class="dotted">HTML</span></abr> document type
+
+declaration, which triggers standards mode rendering.
+</p>
+
+<p>
 The following is an example of the classic "Hello, World!" program:
+</p>
+<pre class="code">
+
+    <span class="background-color">&lt;!DOCTYPE html&gt; </span>
+    <span class="background-color">&lt;html&gt;          </span>
+        <span class="background-color">&lt;head&gt;          </span>
+            <span class="background-color">&lt;title&gt; </span> This is a title <span class="background-color">&lt;/title&gt; </span>
+        <span class="background-color">&lt;/head&gt; </span>
+        <span class="background-color">&lt;body&gt; </span>
+            <span class="background-color">&lt;p&gt;</span> Hello world! <span class="background-color">&lt;/p&gt; </span>
+        <span class="background-color">&lt;/body&gt; </span>
+    <span class="background-color"> &lt;/html&gt; </span>
+    
+</div>
 </body>
 </html>
