@@ -10,14 +10,14 @@
 <style>
 
 body {
-  max-width: 724px;
+  max-width: 524px;
   margin: 0 auto;
 }
 
 .background {
   background-color: #f1ebeb;
   padding: 20px;
-  font-size: 30px;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -31,18 +31,35 @@ h2 {
 
 }
 
+.text2 {
+  list-style-image: url(img2/checked_16.png);
+
+  text-decoration-line: line-through;
+}
+
 li:nth-child(odd) {
-  background-color: aqua;
+  background-color: rgb(119, 174, 219);
+  padding: 10px;
 }
 
 li:nth-child(even) {
- background-color: aquamarine;
+ background-color: rgb(173, 211, 241);
+ padding: 10px;
 }
-li:nth-child()
+
+li:nth-child(cool) {
+ background-color: azure;
+}
+
 .red {
   color: brown;
-  padding-left: 3px;
+  padding-left: 7px;
+text-decoration-line: none;
+}
 
+ol {
+  list-style-position: inside;
+  padding: 10px;
 }
 </style>
 
@@ -56,13 +73,13 @@ li:nth-child()
 
       <li class="text">Hit the gym<span class="red">&#215;</span></li>
 
-      <li class="text">Pay bills<span class="red">&#215;</span></li>
+      <li class="text2">Pay bills<span class="red">&#215;</span></li>
 
       <li class="text">Meet John<span class="red">&#215;</span></li>
 
       <li class="text">Buy eggs<span class="red">&#215;</span></li>
 
-      <li class="text">Read a book<span class="red">&#215;</span></li>
+      <li class="text2">Read a book<span class="red">&#215;</span></li>
 
       <li class="text">Organize office<span class="red">&#215;</span></li>
 
@@ -74,7 +91,7 @@ li:nth-child()
 
       <li class="text">Feed the cat<span class="red">&#215;</span></li>
 
-      <li class="text">Write a letter<span class="red">&#215;</span></li>
+      <li class="text2">Write a letter<span class="red">&#215;</span></li>
 
       <li class="text">Run 1km<span class="red">&#215;</span></li>
     </ol>
