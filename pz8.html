@@ -23,9 +23,19 @@ body {
 .color {
   background-color: rgb(189, 189, 189);
   padding: 10px;
-  padding-right: 30px;
+  width: 350px;
+  height: 250px;
+  border: 3px gray solid;
 }
 
+li::marker {
+  
+}
+
+h4 {
+  font-style: italic;
+  color: gray;
+}
 </style>
 
 <body>
@@ -54,10 +64,10 @@ body {
 <li><a href="#read">Readability of source code</a></li>
 
 <li><a href="#algo">Algorithmic complexity</a></li>
-   <ul>
+   <ol>
      
 <li><a href="#chess">Chess algorithms as an example</a></li>
-</ul>
+</ol>
 
 </ol>
 
@@ -91,7 +101,7 @@ body {
 
 Whatever the approach to development may be, the final program must satisfy some fundamental properties. The following properties are among the most important:
 
-<ol>
+<ul>
 
 <li>Reliability: how often the results of a program are correct. This depends on conceptual correctness of algorithms, and minimization of programming mistakes, such as mistakes in resource management (e.g., buffer overflows and race conditions) and logic errors (such as division by zero or off-by-one errors).</li>
 
@@ -105,7 +115,7 @@ Whatever the approach to development may be, the final program must satisfy some
 
 <li>Efficiency/performance: Measure of system resources a program consumes (processor time, memory space, slow devices such as disks, network bandwidth and to some extent even user interaction): the less, the better. This also includes careful management of resources, for example cleaning up temporary files and eliminating memory leaks.</li>
 
-</ol>
+</ul>
 
 <h3 id="read">Readability of source code</h3>
 
@@ -131,8 +141,9 @@ Different programming languages support different styles of programming (called 
 
 <hr>
 
-Computer programmers are those who write computer software. Their jobs usually involve:
-<ol>
+<h4>Computer programmers are those who write computer software. Their jobs usually involve:</h4>
+
+<ul>
 
 <li>Coding</li>
 
@@ -152,7 +163,7 @@ Computer programmers are those who write computer software. Their jobs usually i
 
 <li>Specification</li>
 
-</ol>
+</ul>
 
 </div>
 </body>
