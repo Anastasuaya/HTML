@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,66 @@
 </head>
 
 <style>
+  nav {
+    background-color: rgb(160, 160, 160);
+    width: 200px;
+  }
 
+  li:hover {
+    background-color: rgb(113, 106, 106);
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+  li {
+    padding: 20px 20px 20px 60px;
+  }
+
+  .edit {
+    background: url(img5/edit.png) 0 -5px/ 64px 64px no-repeat;
+  }
+
+  .fav {
+    background: url(img5/favorites.png) 0 -5px/ 64px 64px no-repeat;
+  }
+
+  .history {
+    background: url(img5/history.png) 0 -5px/ 64px 64px no-repeat;
+  }
+
+  .sec {
+    background: url(img5/security.png) 0 -5px/ 64px 64px no-repeat;
+  }
+
+  .setting {
+    background: url(img5/settings.png) 0 -5px/ 64px 64px no-repeat;
+  }
 </style>
 
 <body>
   
+  <a href="index.html">Home</a>
+
+  <nav>
+    <ul>
+      <li class="edit"><a href="#">EDIT</a></li>
+      <li class="fav"><a href="#">FAVORITES</a></li>
+      <li class="history"><a href="#">HISTORY</a></li>
+      <li class="sec"><a href="#">SECURITY</a></li>
+      <li class="setting"><a href="#">SETTINGS</a></li>
+    </ul>
+  </nav>
+
 </body>
+
 </html>
