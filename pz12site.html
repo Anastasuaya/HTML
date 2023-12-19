@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    max-width: 724px;
+    margin: 0 auto;
+    background-color: rgb(255, 197, 179);
+  }
+
+  h1 {
+    text-align: center;
+    font-family: monospace;
+    padding-top: 20px;
+    font-size: 40px;
+  }
+
+  .calc {
+    animation: toTop 3s forwards;
+    position: absolute;
+    transform: translate(-50%) rotate(-40deg);
+      top: 20%;
+      left: 20%;
+
+  }
+
+  @keyframes toTop {
+    from {
+      transform: translate(-50%) rotate(0);
+      top: 100%;
+      left: 50%;
+    }
+  }
+
+  .book {
+    animation: toTo 6s forwards;
+    position: absolute;
+    transform: translate(-40%) rotate(-30deg);
+    top: 10%;
+    left: 30%;
+  }
+
+  @keyframes toTo {
+    from {
+      transform: translate(-40%) rotate(0);
+      top: 100%;
+      left: 40%;
+    }
+  }
+
+  .paper {
+    animation: toT 9s forwards;
+    position: absolute;
+    transform: translate(-30%) rotate(30deg);
+    top: 10%;
+    right: 40%;
+  }
+
+  @keyframes toT {
+    from {
+      transform: translate(-30%) rotate(0);
+      top: 100%;
+      right: 40%;
+    }
+  }
+
+  .pallete {
+    animation: to 12s forwards;
+    position: absolute;
+    transform: translate(-30%) rotate(40deg);
+    top: 20%;
+    right: 50%;
+  }
+
+  @keyframes to {
+    from {
+      transform: translate(-30) rotate(0);
+      top: 100%;
+      right: 50%;
+    }
+  }
+
+  /* @keyframes toTop {
+    from {
+      transform: translate(-50%) rotate(0);
+      top:100%;
+      left: 50%;
+    }
+  }
+  
+  .book {
+    animation: toTop 6s forwards ;
+    position: absolute;
+    transform: translate(-50%) rotate(-20deg);
+    top: 22%;
+    left: 30%; */
+</style>
+
+<body>
+
+  <h1>Hello,my site!</h1>
+
+  <img class="calc" width="140" src="img/calc.png">
+  <img class="book" width="200" src="img/book.png">
+  <img class="paper" width="200" src="img/paper.png">
+  <img class="pallete" width="140" src="img/pallete.png">
+  <img class="pencil" src="img/pencil.png">
+
+</body>
+
+</html>
