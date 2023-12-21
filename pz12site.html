@@ -9,8 +9,7 @@
 </head>
 <style>
   body {
-    max-width: 724px;
-    margin: 0 auto;
+   overflow: hidden;
     background-color: rgb(255, 197, 179);
   }
 
@@ -22,11 +21,12 @@
   }
 
   .calc {
-    animation: toTop 3s forwards;
+    animation: toTop 3s both;
     position: absolute;
-    transform: translate(-50%) rotate(-40deg);
-    top: 20%;
-    left: 20%;
+    transform: translate(-50%) rotate(-25deg);
+    top: 30%;
+    left: 34%;
+    opacity: 1;
 
   }
 
@@ -34,32 +34,36 @@
     from {
       transform: translate(-50%) rotate(0);
       top: 100%;
-      left: 50%;
+      left: 34%;
+      opacity: 0.6;
     }
   }
 
   .book {
-    animation: toTo 6s forwards;
+    animation: toTo 3s both 3.5s;
     position: absolute;
-    transform: translate(-40%) rotate(-30deg);
-    top: 10%;
-    left: 30%;
+    transform: translate(-40%) rotate(-20deg);
+    top: 20%;
+    left: 40%;
+    opacity: 1;
   }
 
   @keyframes toTo {
     from {
       transform: translate(-40%) rotate(0);
       top: 100%;
-      left: 40%;
+      left: 50%;
+      opacity: 0.6
     }
   }
 
   .paper {
-    animation: toT 9s forwards;
+    animation: toT 3s both 7s;
     position: absolute;
-    transform: translate(-30%) rotate(30deg);
-    top: 10%;
+    transform: translate(-30%) rotate(20deg);
+    top: 20%;
     right: 40%;
+    opacity: 1;
   }
 
   @keyframes toT {
@@ -67,39 +71,46 @@
       transform: translate(-30%) rotate(0);
       top: 100%;
       right: 40%;
+      opacity: 0.6
     }
   }
 
   .pallete {
-    animation: to 12s forwards;
+    animation: to 3s both 10.5s;
     position: absolute;
-    transform: translate(-30%) rotate(40deg);
-    top: 20%;
-    right: 50%;
+    transform: translate(-30%) rotate(210deg);
+    top: 30%;
+    right: 35%;
+    opacity: 1;
   }
 
   @keyframes to {
     from {
       transform: translate(-30) rotate(0);
       top: 100%;
-      right: 50%;
+      right: 35%;
+      opacity: 0.6;
     }
   }
 
-  /* @keyframes toTop {
-    from {
-      transform: translate(-50%) rotate(0);
-      top:100%;
-      left: 50%;
-    }
+  .pencil {
+    animation: t 3s both 14s;
+    position: absolute;
+    transform: translate(100%) rotate(90deg);
+    top: 40%;
+    right: 56%;
+    opacity: 1;
   }
   
-  .book {
-    animation: toTop 6s forwards ;
-    position: absolute;
-    transform: translate(-50%) rotate(-20deg);
-    top: 22%;
-    left: 30%; */
+  @keyframes t {
+    from {
+      top: 100%;
+      right: 56%;
+      opacity: 0.5;
+    }
+  }
+
+  
 </style>
 
 <body>
@@ -114,6 +125,21 @@
   <img class="pallete" width="140" src="img/pallete.png">
   <img class="pencil" src="img/pencil.png">
 
+
+   <!-- @keyframes toTop {
+    from {
+      transform: translate(-50%) rotate(0);
+      top:100%;
+      left: 50%;
+    }
+  }
+  
+  .book {
+    animation: toTop 6s forwards ;
+    position: absolute;
+    transform: translate(-50%) rotate(-20deg);
+    top: 22%;
+    left: 30%; -->
 </body>
 
 </html>
