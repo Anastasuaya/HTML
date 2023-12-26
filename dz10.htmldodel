@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .footer {
+    background-color: rgb(255, 139, 97);
+    max-width: 1000px;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+  }
+
+  .flex1 {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+   padding: 7px;
+   filter:grayscale(1);
+  }
+  img {
+  
+  }
+</style>
+
+<body>
+  <footer>
+    <div class="footer">
+      <div class="flex">
+        <div class="flex1">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Gallery</a>
+          <a href="#">Nows</a>
+        </div>
+        <div class="flex1">
+          <a href="#">Blog</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy & cookies</a>
+        </div>
+        <div>
+          <img src="img5/fb.png" alt="fb.png">
+          <img src="img5/insta.png" alt="">
+          <img src="img5/youtube.png">
+        </div>
+      </div>
+      <div>
+        <hr>
+        Copyright Company 2018-2019
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
