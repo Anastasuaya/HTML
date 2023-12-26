@@ -8,21 +8,39 @@
   <title>Document</title>
 </head>
 <style>
-  /* для рамки с уголочками: border-color: white transparent */
 
-  .border {
+.border {
+width: 350px;
+height: 200px;
+border: 10px solid;
+border-color: black transparent transparent transparent;
+transform: rotate(45deg);
+position: absolute;
+left: 40%;
+top: 41%;
+}
 
-    width: 200px;
-    height: 200px;
-    border: 10px solid;
-    border-color: black transparent transparent transparent;
-  }
+.border1 {
+width: 350px;
+height: 200px;
+border: 10px solid;
+border-color: black transparent transparent transparent;
+transform: rotate(-38deg);
+position: absolute;
+left: 33%;
+top: 40%;
+}
+ 
 </style>
 
 <body>
-  <div class="border">
-
-  </div>
+  <div>
+  <div class="border"></div>
+  <div class="border1"></div>
+  <div class="border"></div>
+  <div class="border"></div>
+  <img src="img5/wedding.jpg">
+</div>
 </body>
 
 </html>

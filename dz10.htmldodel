@@ -31,9 +31,7 @@
    padding: 7px;
    filter:grayscale(1);
   }
-  img {
-  
-  }
+
 </style>
 
 <body>
