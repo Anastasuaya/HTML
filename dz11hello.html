@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-color: rgb(252, 224, 255);
+    margin: 20px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+.background {
+ 
+  width: 800px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(198, 175, 201);
+  perspective: 550px;
+}
+
+.block {
+  width: 300px;
+  height: 200px;
+  background-color: blueviolet;
+  border: 7px solid rgb(81, 46, 128);
+  transition: 1s;
+  transform-origin: left center;
+}
+
+.block1 {
+  width: 300px;
+  height: 200px;
+  background-color: blueviolet;
+  border: 7px solid rgb(81, 46, 128);
+  transform-origin: right center;
+  transition: 1s;
+}
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  z-index: -1;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.background:hover .block {
+  transform: rotateY(45deg);
+  transition: 2s;
+}
+
+.background:hover .block1 {
+  transform: rotateY(-45deg);
+  transition: 2s;
+}
+</style>
+<body>
+  <a href="index.html">Home</a>
+  <div class="flex">
+    <div class="background">
+      <h1>Hello!</h1>
+      <div class="block"></div>
+      <div class="block1"></div>
+    </div>
+  </div>
+</body>
+</html>
