@@ -5,7 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+body {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.text {
+    height: 300px;
+    width: 400px;
+    background-color: rgb(255, 224, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    transition: 1s;
+}
+
+.revers {
+    flex-direction: row-reverse;
+}
+
+.flex:hover .text, .flex:hover .photo {
+    filter: brightness(0.6);
+    transition: 1s;
+}
+
+.flex:hover .photo {
+    transform: scale(1.5);
+    transition: 1s;
+}
+</style>
 <body>
-    
+    <div>
+        <div class="flex">
+            <div class="text">
+                <p>Hello,Aether!</p>
+            </div>
+            <div class="photo">
+                <img src="img/aether1.jpg" width="400">
+            </div>
+        </div>
+        <div class="flex revers">
+            <div class="text">
+                <p>Hello,Aether!</p>
+            </div>
+            <div class="photo">
+                <img src="img/aether2.jpg" width="400">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="text">
+                <p>Hello,Aether!</p>
+            </div>
+            <div class="photo">
+                <img src="img/aether3.jpg" width="400">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
