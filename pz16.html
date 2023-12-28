@@ -7,8 +7,11 @@
   <title>Document</title>
 </head>
 <style>
-.menu ul {
-  background-color: lemonchiffon;
+  .menu {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+ul {
+  background: lemonchiffon;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -17,19 +20,19 @@
   width: auto;
 }
 
-.menu li {
+ li {
   padding: 10px;
   border: 1px rgb(167, 155, 43) solid;
   position: relative;
   
 }
 
-.menu .inner {
+.inner {
 left: 100%;
 top: 0;
 }
 
-.menu li ul {
+li ul {
   display: none;
   position: absolute;
 }
@@ -37,8 +40,24 @@ top: 0;
 a {
   text-decoration: none;
   color: black;
+  text-transform: capitalize;
+  background: lemonchiffon;
+  transition: 1s;
 }
 
+a:hover {
+  transition: 1s;
+  background: burlywood;
+}
+li:hover>ul {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  max-width: 800px;
+  font-size: 20px;
+}
 </style>
 <body>
   <div class="menu">
@@ -78,6 +97,7 @@ a {
         <a href="#">Contacts</a>
       </li>
     </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
   </div>
 </body>
 </html>
