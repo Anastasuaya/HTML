@@ -9,37 +9,59 @@
 </head>
 <style>
 
-.border {
-width: 350px;
-height: 200px;
-border: 10px solid;
-border-color: black transparent transparent transparent;
-transform: rotate(45deg);
-position: absolute;
-left: 40%;
-top: 41%;
-}
+  .box {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 100px auto;
+    transform: rotate(45deg);
+  }
 
-.border1 {
-width: 350px;
-height: 200px;
-border: 10px solid;
-border-color: black transparent transparent transparent;
-transform: rotate(-38deg);
-position: absolute;
-left: 33%;
-top: 40%;
-}
- 
+  .box div {
+    height: 10px;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+  }
+
+  .top {
+    top: 0;
+  }
+
+  .left {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    z-index: -1;
+  }
+
+  .right {
+    right: 0;
+    transform: rotate(-90deg);
+    transform-origin: right 0;
+    z-index: -1;
+  }
+
+  .bottom {
+    bottom: 0;
+    right: 0;
+  }
+
+  img {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
 </style>
 
 <body>
-  <div>
-  <div class="border"></div>
-  <div class="border1"></div>
-  <div class="border"></div>
-  <div class="border"></div>
-  <img src="img5/wedding.jpg">
+  <div class="box">
+    <img width="300px" src="img3/splin.jpg" alt="альбом сплина">
+  <div class="top"></div>
+  <div class="left"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  
 </div>
 </body>
 
