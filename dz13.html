@@ -6,7 +6,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
+<style>
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    border: none;
+    gap: 30px;
+  }
+
+  .block {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px lightslategray;
+    transition: 1s;
+  }
+
+  .block:hover {
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  .text {
+  color: lightslategray;
+  }
+
+  .font {
+    font-size: 50px;
+  }
+
+  p {
+    font-weight: bolder;
+    margin: 10px;
+  }
+
+  .buy1 {
+    border: 1px solid rgb(250, 76, 76);;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(250, 76, 76);;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+  }
+
+  .buy2 {
+    border: 1px solid rgb(255, 155, 119);
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(255, 155, 119);
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+  }
   
+  .buy3 {
+    border: 1px solid green;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: green;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+  }
+  
+  .buy4 {
+    border: 1px solid rgb(60, 60, 172);
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(60, 60, 172);
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+  }
+
+</style>
+<body>
+  <div class="flex">
+    <div class="block">
+      <h1>Enterprise</h1>
+      <hr style="border: 2px solid rgb(250, 76, 76);">
+      <div>
+        <p class="font">$69</p>
+        <p class="text">per mounth</p>
+        <p>10GB disk space</p>
+        <p>100GB monthly bandwidth</p>
+        <p>20 email accounts</p>
+        <p>Unlimited sabdoment</p>
+        <button class="buy1">Buy</button>
+      </div>
+    </div>
+    <div class="block">
+      <h1>Professional</h1>
+      <hr style="border: 2px solid rgb(255, 155, 119);">
+      <p class="font">$29</p>
+      <p class="text">per mounth</p>
+      <p>5GB disk space</p>
+      <p>60GB monthly bandwidth</p>
+      <p>10 email accounts</p>
+      <p>Unlimited sabdoment</p>
+      <button class="buy2">Buy</button>
+    </div>
+    <div class="block">
+      <h1>Standart</h1>
+      <hr style="border: 2px solid green;">
+      <p class="font">$19</p>
+      <p class="text">per mounth</p>
+      <p>3GB disk space</p>
+      <p>30GB monthly bandwidth</p>
+      <p>5 email accounts</p>
+      <p>Unlimited sabdoment</p>
+      <button class="buy3">Buy</button>
+    </div>
+    <div class="block">
+      <h1>Basic</h1>
+      <hr style="border: 2px solid rgb(60, 60, 172);">
+      <p class="font">$9</p>
+      <p class="text">per mounth</p>
+      <p>1GB disk space</p>
+      <p>10GB monthly bandwidth</p>
+      <p>2 email accounts</p>
+      <p>Unlimited sabdoment</p>
+      <button class="buy4">Buy</button>
+    </div>
+  </div>
 </body>
 </html>
