@@ -15,27 +15,60 @@
 
   .flex {
     display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    
+  }
+
+  ul {
+    background: rgb(80, 9, 23);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position: relative;
+    width: auto;
+  }
+
+  li {
+    border: 1px rgb(60, 11, 13) solid;
+    position: relative;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: rgb(75, 15, 28);
+    transition: 1s;
+    padding: 10px;
+    display: block;
+    transition: 1s;
+  }
+
+  a:hover {
+    transition: 1s;
+    background: rgb(138, 51, 70);
   }
 
   /* с помощью position: fixed закрепить менюшку */
-  
 </style>
 
 <body>
-  <div>
+  <div class="menu">
     <ul>
-      <li>Writers</li>
-      <li>Discussions</li>
-      <li>Books</li>
-      <li>The authors</li>
-      <li>Readers</li>
+      <li><a href="#">Writers</a></li>
+      <li><a href="#">Discussions</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">The authors</a></li>
+      <li><a href="#">Readers</a></li>
     </ul>
   </div>
   <div class="flex">
-
-    <div>
-      <img src="img2/WilliamWordsworth.jpg">
-    </div>
     <h1> William Shakespeare</h1>
 
     <hr>
@@ -73,19 +106,19 @@
     <p> Throughout the 20th and 21st centuries, Shakespeare's works have been continually adapted and rediscovered by
       new movements in scholarship and performance. His plays remain popular and are studied, performed, and
       reinterpreted through various cultural and political contexts around the world.</p>
-    
-      <div>
 
-        <h2>Simular authors:</h2>
+    <div>
 
-        <img src="img2/Anne_Hathaway.jpg" alt="Anne Hathaway">
-        <img src="img2/Dickens_Gurney.jpg" alt="Dickens Gurney">
-        <img src="img2/Oscar_Wilde_Sarony.jpg" alt="Oscar Wilde Sarony">
-        <img src="img2/Cervantes_Jauregui.jpg" alt="Cervantes Jauregui">
-        
+      <h2>Simular authors:</h2>
+
+      <img src="img2/Anne_Hathaway.jpg" alt="Anne Hathaway">
+      <img src="img2/Dickens_Gurney.jpg" alt="Dickens Gurney">
+      <img src="img2/Oscar_Wilde_Sarony.jpg" alt="Oscar Wilde Sarony">
+      <img src="img2/Cervantes_Jauregui.jpg" alt="Cervantes Jauregui">
 
 
-      </div>
+
+    </div>
   </div>
 </body>
 
