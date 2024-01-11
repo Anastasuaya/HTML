@@ -17,7 +17,7 @@
 
   .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   h1 {
@@ -30,19 +30,20 @@
     width: 600px;
     height: 600px;
     background: rgb(247, 191, 109);
-    border: 2px sopd rgb(204, 126, 10);
+    border: 2px solid rgb(204, 126, 10);
     border-radius: 50%;
     z-index: -1;
     margin: 40px;
+    bottom: 90px;
+    position: fixed;
+    right: 0;
   }
-
+  
   .lel {
-    width: 700px;
-    height: 700px;
-    margin-right: -800px;
     padding-top: 30px;
     padding-left: 50px;
-    position: fixed;
+    width: 700px;
+    height: 700px;
   }
 
   .bottom {
@@ -132,8 +133,10 @@
       <p class="text-aligin"><a class="bottom" href="pz15.html">Практическое задание 15</a></p>
       <p class="text-aligin"><a class="bottom" href="pz16.html">Практическое заданиt 16 </a></p>
     </div>
-    <div class="kryg"></div>
-    <img class="lel" src="img/лелуш.png">
+    <div class="kryg">
+      <img class="lel" src="img/лелуш.png">
+
+    </div>
 
 
   </div>
