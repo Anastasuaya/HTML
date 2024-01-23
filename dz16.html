@@ -8,37 +8,36 @@
   <title>Document</title>
 </head>
 <style>
-
   .border {
     border: 1px solid black;
   }
 
-  .box {
-    background-color: gray;
-  }
+
 
   .flex {
     display: flex;
   }
+
   .small {
     height: 50px;
     width: 50px;
   }
+
   .big {
     height: 300px;
   }
 
   nav {
     justify-content: space-between;
-    margin: 10px 0;  
+    margin: 10px 0;
     padding: 10px;
   }
 
   nav ul {
     list-style: none;
     gap: 10px;
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
   }
 
   nav a {
@@ -61,6 +60,7 @@
 
   main {
     padding: 20px;
+    font-size: clamp(12px, 1vw, 20px);
   }
 
   aside {
@@ -79,7 +79,9 @@
     gap: 10px;
   }
 
-  header, .content, footer {
+  header,
+  .content,
+  footer {
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -125,32 +127,33 @@
     nav {
       margin: 5px 0;
     }
+
     aside:first-of-type {
-    display: none;
-  }
+      display: none;
+    }
 
-  aside:last-of-type {
-    margin-top: 5px;
-  }
+    aside:last-of-type {
+      margin-top: 5px;
+    }
 
-  .content {
-    flex-direction: column;
-  }
+    .content {
+      flex-direction: column;
+    }
 
-  main {
-    padding: 0 5px;
-  }
+    main {
+      padding: 0 5px;
+    }
 
-  aside {
-    padding: 5px;
-    width: auto;
-  }
+    aside {
+      padding: 5px;
+      width: auto;
+    }
 
-  .wrap {
-    flex-wrap: nowrap;
-    justify-content: center;
+    .wrap {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
   }
-  } 
 </style>
 
 <body>
@@ -174,9 +177,13 @@
   <div class="content flex">
     <main class="border">
       <h1>Lorem ipsum dolor</h1>
-      <div class="box big"></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam ut repellendus perspiciatis sapiente voluptates veritatis nihil omnis perferendis! Odit totam facilis quidem, dolorem qui quis hic corrupti ut atque.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam ut repellendus perspiciatis sapiente voluptates veritatis nihil omnis perferendis! Odit totam facilis quidem, dolorem qui quis hic corrupti ut atque.</p>
+      <div class="big" style="background-color: rgb(16, 11, 49);"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam ut repellendus perspiciatis sapiente
+        voluptates veritatis nihil omnis perferendis! Odit totam facilis quidem, dolorem qui quis hic corrupti ut atque.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam ut repellendus perspiciatis sapiente
+        voluptates veritatis nihil omnis perferendis! Odit totam facilis quidem, dolorem qui quis hic corrupti ut atque.
+      </p>
     </main>
     <div>
       <aside class="border">
@@ -192,14 +199,14 @@
       <aside class="border">
         <p>Lorem</p>
         <div class="flex wrap">
-      <div class="box small"></div>
-      <div class="box small"></div>
-      <div class="box small"></div>
-      <div class="box small"></div>
-      <div class="box small"></div>
-      <div class="box small"></div>
-      <div class="box small"></div>
-      <div class="box small"></div>
+          <div class="small" style="background-color: rgb(27, 27, 113);"></div>
+          <div class="small" style="background-color: rgb(40, 40, 126);"></div>
+          <div class="small" style="background-color: rgb(54, 54, 156);"></div>
+          <div class="small" style="background-color: rgb(72, 72, 188);"></div>
+          <div class="small" style="background-color: rgb(93, 93, 192);"></div>
+          <div class="small" style="background-color: rgb(117, 117, 208);"></div>
+          <div class="small" style="background-color: rgb(146, 146, 226);"></div>
+          <div class="small" style="background-color: rgb(186, 186, 235);"></div>
         </div>
       </aside>
     </div>
