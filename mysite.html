@@ -20,7 +20,7 @@
   nav {
     text-transform: capitalize;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(5, 5, 5);
     opacity: 0.8;
     position: fixed;
@@ -53,7 +53,7 @@
   .block2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 640px;
     color: white;
@@ -61,17 +61,83 @@
   }
 
   .red {
-  
+    position: relative;
+  }
+
+  .position {
+    position: absolute;
+    right: 38%;
+    bottom: 16%;
+  }
+
+  .block3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 640px;
+    color: white;
+
+  }
+
+  .position1 {
+    position: absolute;
+    right: 15%;
+    bottom: 77%;
+  }
+
+  .flex1 {
+    display: flex;
+  }
+
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+  }
+
+  .red1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .position2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 39%;
+  }
+
+  .block4 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .more {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 92px;
+  }
+
+  .red2 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
   }
 
   h1 {
-
-   background-image:"img5/bigred.png";
-   
-  }
-
-  p {
-    font-size: 24px;
+    font-size: 54px;
   }
 </style>
 
@@ -92,38 +158,69 @@
     </header>
     <main>
       <div class="block1">
-        <h1 style="font-size: 54px;">Андеграунд на Навагинской</h1>
+        <h1>Андеграунд на Навагинской</h1>
         <h2 style="font-size: 30px;">Просторное антикафе с большим количеством развлечений</h2>
-        <p>3 рубля минута, аренда комнат от 180 рублей в час</p>
+        <p style="font-size: 24px;">3 рубля минута, аренда комнат от 180 рублей в час</p>
       </div>
       <div class="block2">
-        <div>
+        <div class="red">
           <img src="img5/bigred.png">
-          <div>
+          <div class="position">
             <h1>Андеграунд</h1>
           </div>
         </div>
-        
-        <p>Андеграунд - душевное тайм-кафе Сочи с приятной атмосферой, дружелюбным персоналом, вкусными угощениями и
-          неповторимым стилем.</p>
-        <p>Работаем ежедневно с 10:00 до 23:00</p>
+        <p style="font-size: 40px; text-align: center; margin: 0;">Андеграунд - душевное тайм-кафе Сочи <br>
+          с приятной атмосферой, дружелюбным персоналом, <br>
+          вкусными угощениями и неповторимым стилем.</p>
+        <p style="margin: 0; font-size: 24px;">Работаем ежедневно с 10:00 до 23:00</p>
       </div>
+
       <div class="block3">
-        <h1>Что мы можем предложить вам</h1>
-        <ul>
-          <!-- list-style-image -->
-          <li>Множество напитков и вкусностей на ваш выбор</li>
-          <li>Большое количество развлечений: книги, музыка, кино, игры и мероприятия</li>
-          <li>Кворкинг</li>
-        </ul>
+        <div class="red">
+          <img src="img5/bigred.png">
+          <div class="position1">
+            <h1>Что мы можем предложить вам</h1>
+          </div>
+          <div class="flex1">
+            <div class="red1">
+              <img src="img5/redddd.png" height="150px" width="216px">
+              <img src="img5/redddd.png" height="150px" width="216px">
+              <img src="img5/redddd.png" height="150px" width="216px">
+
+              <div class="position2">
+                <img src="img5/coffee.png" height="70px" width="68px" style="margin-bottom: 40px; margin-top: 42px;">
+                <img src="img5/game.png" height="70px" width="70px" style="margin-bottom: 40px; margin-top: 34px;">
+                <img src="img5/work.png" height="64px" width="64px" style="margin-bottom: 40px; margin-top: 46px;">
+              </div>
+            </div>
+            <div class="flex2">
+              <p>Множество напитков и вкусностей на ваш выбор</p>
+              <p>Большое количество развлечений: книги, музыка, <br>
+                кино, игры и мероприятия</p>
+              <p>Кворкинг</p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="block4">
-        <h1 id="photo">Наши фотографии</h1>
-        <img src="img4/pexels-andrea-piacquadio-927451 1.png" alt="">
-        <img src="img4/pexels-kevin-malik-8762792 1.png" alt="">
-        <p>Больше фотографий...</p>
-        <img src="img5/insta.png" alt="">
+        <h1 id="photo" style="text-align: center;">Наши фотографии</h1>
+        <div class="photo">
+          <img src="img4/pexels-andrea-piacquadio-927451 1.png">
+          <img src="img4/pexels-kevin-malik-8762792 1.png" height="300px">
+        </div>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+           <div class="red2">
+            <img src="img5/redddd.png" alt="">
+          </div>
+        <div class="more">
+          <p style="font-size: 30px; padding-right: 50px; margin: 0;">Больше фотографий...</p>
+          <img src="img5/inst.png" alt="">
+        </div>
+        </div>
+         
       </div>
+
       <div class="block5">
         <h1 id="com">Наша команда</h1>
         <img src="img5/андрей.png" alt="">
