@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,63 @@
   <title>Document</title>
 </head>
 <style>
-body {
-  background-color: rgba(21, 18, 18, 1);
-}
+  body {
+    background-color: rgba(21, 18, 18, 1);
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav {
+    text-transform: capitalize;
+    color: white;
+    
+  }
+
+  nav ul {
+    list-style: none;
+    gap: 10px;
+  }
+
+  nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+  }
+
+  .block1 {
+    background-image: url(img5/pexels-helena-lopes-1015568\ 1.png);
+    height: 600px;
+  }
 </style>
+
 <body>
   <div>
     <header>
       <nav>
-        <span>Андеграунд</span>
-        <ul>
-          <li><a href="#">Фото</a></li>
-          <li><a href="#">Команда</a></li>
-          <li><a href="#">Комнаты</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="flex">
+          <li style="text-transform: uppercase;">Андеграунд</li>
+          <li><a href="#photo">Фото</a></li>
+          <li><a href="#com">Команда</a></li>
+          <li><a href="#room">Комнаты</a></li>
+          <li><a href="#otz">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
           <li>8(900)354-43-73</li>
         </ul>
       </nav>
     </header>
     <main>
-      <div>
-         <h1>Андеграунд на Навагинской</h1>
-      <h2>Просторное антикафе с большим количеством развлечений</h2>
-      <p>3 рубля минута, аренда комнат от 180 рублей в час</p>
+      <div class="block1">
+        <h1>Андеграунд на Навагинской</h1>
+        <h2>Просторное антикафе с большим количеством развлечений</h2>
+        <p>3 рубля минута, аренда комнат от 180 рублей в час</p>
       </div>
       <div>
         <h1>Андеграунд</h1>
-        <p>Андеграунд - душевное тайм-кафе Сочи с приятной атмосферой, дружелюбным персоналом, вкусными угощениями и неповторимым стилем.</p>
+        <p>Андеграунд - душевное тайм-кафе Сочи с приятной атмосферой, дружелюбным персоналом, вкусными угощениями и
+          неповторимым стилем.</p>
         <p>Работаем ежедневно с 10:00 до 23:00</p>
       </div>
       <div>
@@ -47,14 +77,14 @@ body {
         </ul>
       </div>
       <div>
-        <h1>Наши фотографии</h1>
+        <h1 id="photo">Наши фотографии</h1>
         <img src="img4/pexels-andrea-piacquadio-927451 1.png" alt="">
         <img src="img4/pexels-kevin-malik-8762792 1.png" alt="">
         <p>Больше фотографий...</p>
         <img src="img5/insta.png" alt="">
       </div>
       <div>
-        <h1>Наша команда</h1>
+        <h1 id="com">Наша команда</h1>
         <img src="img5/андрей.png" alt="">
         <h2>андрей</h2>
         <p>Отлично смешивает ингридиенты и готовит лучшие молочные коктейли. </p>
@@ -69,7 +99,7 @@ body {
         <p>Самая опытная. Ответит на любой ваш вопрос.</p>
       </div>
       <div>
-        <h1>Наши комнаты</h1>
+        <h1 id="room">Наши комнаты</h1>
         <img src="img4/greenroom.png" alt="">
         <h2>Зеленая комната</h2>
         <p>Зона чтения книг и игр в настолки.</p>
@@ -81,13 +111,13 @@ body {
         <p>Зона для кворкинга</p>
       </div>
       <div>
-        <h1>Отзывы</h1>
+        <h1 id="otz">Отзывы</h1>
         <p>1.Всё просто замечательно! Отмечала здесь свой день рождения, все остались довольны!</p>
         <p>2. Очень уютная атмосфера, добрый персонал, большое разнообразие фильмов.</p>
         <p>3. Отличное место для отличной работы. Частенько прихожу сюда, чтобы поработать в тишине и уюте.</p>
       </div>
       <div>
-        <h1>Как нас найти</h1>
+        <h1 id="contacts">Как нас найти</h1>
         <h2>Улица Навагинская, дом 9</h2>
         <h2>Торговый центр Панарама</h2>
         <img src="img4/2022-04-30 (3) 1.png" alt="">
@@ -107,4 +137,5 @@ body {
     </main>
   </div>
 </body>
+
 </html>
