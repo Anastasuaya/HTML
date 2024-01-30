@@ -10,6 +10,7 @@
 <style>
   body {
     background-color: rgba(21, 18, 18, 1);
+    max-width: 2140px ;
   }
 
   .flex {
@@ -25,7 +26,8 @@
     opacity: 0.8;
     position: fixed;
     top: 0;
-    width: 1350px;
+    width: 2140px;
+    z-index: 2;
   }
 
   nav ul {
@@ -136,37 +138,27 @@
     justify-content: flex-end;
   }
 
-  .red3 {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
+
+  .footer {
+    max-width: 2140px;
+    margin: 20px auto;
+    color: white
   }
 
-  .red4 {
-    position: relative;
+  .copyright {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
   }
 
-  .men {
-    position: absolute;
-    display: flex;
-  }
+.cop {
+  display: flex;
+  flex-direction: column;
+}
 
-  .woomen {
-    position: absolute;
-    display: flex;
-  }
-
-  .lera {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Ylya {
-    display: flex;
-    flex-direction: column;
-  }
+.right {
+padding: 15px;
+}
 
   h1 {
     font-size: 54px;
@@ -256,43 +248,22 @@
       <div class="block5">
         <h1 id="com">Наша команда</h1>
 
-
-        <div class="red3">
-          <div class="men">
-            <img src="img5/андрей.png" alt="">
-            <h2>андрей</h2>
-            <p>Отлично смешивает ингридиенты и готовит лучшие молочные коктейли. </p>
-            <img src="img5/костян.png" alt="">
-            <h2>Костян</h2>
-            <p>Главный заводила в нашем антикафе. Без него не проходит ни одно мероприятие!</p>
-          </div>
-          <img src="img5/redddd.png" alt="">
-          <img src="img5/redddd.png" alt="">
-        </div>
-
-        <div class="red4">
-          <div class="woomen"> 
-            <div class="lera">
-            <img src="img5/лера.png" alt="">
-           
-              <h2 style="color: white;">Лера</h2>
-              <p style="font-size: 24px; color: white;">Главный геймер. <br> Посоветует игру или фильм.</p>
-            </div>
-            <img src="img5/юля.png" alt="">
-            <div class="Ylya">
-              <h2 style="color: white;">Юля</h2>
-              <p style="font-size: 24px; color: white;">Самая опытная. <br> Ответит на любой ваш вопрос.</p>
-            </div>
-
-          </div>
-          <img src="img5/redddd.png" alt="">
-          <img src="img5/redddd.png" alt="">
-        </div>
-
-
-
-
-
+        <img src="img5/андрей.png" alt="">
+        <h2>андрей</h2>
+        <p>Отлично смешивает ингридиенты и готовит лучшие молочные коктейли. </p>
+        <img src="img5/костян.png" alt="">
+        <h2>Костян</h2>
+        <p>Главный заводила в нашем антикафе. Без него не проходит ни одно мероприятие!</p>
+        <img src="img5/redddd.png" alt="">
+        <img src="img5/redddd.png" alt="">
+        <img src="img5/лера.png" alt="">
+        <h2 style="color: white;">Лера</h2>
+        <p style="font-size: 24px; color: white;">Главный геймер. <br> Посоветует игру или фильм.</p>
+        <img src="img5/юля.png" alt="">
+        <h2 style="color: white;">Юля</h2>
+        <p style="font-size: 24px; color: white;">Самая опытная. <br> Ответит на любой ваш вопрос.</p>
+        <img src="img5/redddd.png" alt="">
+        <img src="img5/redddd.png" alt="">
       </div>
       <div class="block6">
         <h1 id="room">Наши комнаты</h1>
@@ -310,7 +281,8 @@
         <h1 id="otz">Отзывы</h1>
         <p>1.Всё просто замечательно! Отмечала здесь свой день рождения, все остались довольны!</p>
         <p>2. Очень уютная атмосфера, добрый персонал, большое разнообразие фильмов.</p>
-        <p>3. Отличное место для отличной работы. Частенько прихожу сюда, чтобы поработать в тишине и уюте.</p>
+        <p>3. Отличное место для отличной работы. Частенько прихожу сюда, чтобы поработать в тишине и уюте.
+        </p>
       </div>
       <div class="block8">
         <h1 id="contacts">Как нас найти</h1>
@@ -319,16 +291,23 @@
         <img src="img4/2022-04-30 (3) 1.png" alt="">
       </div>
       <footer>
-        <div>
-          <p>Андеграунд</p>
-          <p>8(900)354-43-73</p>
-          <p>©2024</p>
+        <div class="footer">
+          <div class="copyright">
+            <div class="cop">
+                <p>Андеграунд</p>
+            <p>8(900)354-43-73</p>
+            <p>©2024</p>
+            </div>
+          
+            <div class="right">
+            <img src="img5/inst.png" alt="">
+            <img src="img5/fbbb.png" alt="">
+            <img src="img5/vkvk.png" alt="">
+          </div>
+          </div>
+          
         </div>
-        <div>
-          <img src="img5/insta.png" alt="">
-          <img src="img5/fb.png" alt="">
-          <img src="img5/VK.png" alt="">
-        </div>
+
       </footer>
     </main>
   </div>
