@@ -9,75 +9,119 @@
 <style>
     .container {
         display: grid;
+        justify-content: center;
     }
 
     .anni {
-        background-color: rgb(245, 231, 233);
         display: grid;
-        justify-items: end;
-        grid-template-columns: 200px 300px 100px;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center;
+        align-items: center;
     }
 
     .rita {
-        background-color: rgb(217, 243, 217);
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .anni p {
+        background-color: rgb(255, 145, 161);
+        padding: 15px;
+        border-radius: 20px 20px 20px 0px;
+        width: 250px;
+    }
+
+    .rita p {
+        background-color: rgb(145, 211, 255);
+        padding: 15px;
+        border-radius: 20px 20px 0px 20px;
+        width: 250px;
+    }
+
+    .brown {
+        display: flex;
+        align-items: center;
+    }
+
+    .smith {
+        display: flex;
+        align-items: center;
+    }
+
+    h5 {
+        color: gray;
     }
 </style>
 
 <body>
     <div class="container">
         <div class="anni">
-            <div>
-                <h4>Anni Smith</h4>
-                <p>4 hours ago</p>
+            <div class="smith">
+                <div>
+                    <h4>Anni Smith</h4>
+                    <h5>4 hours ago</h5>
+                </div>
+                <img src="img3/avatar_2.png" alt="">
             </div>
             <p>London is the capital of great Britan!</p>
             <div></div>
-            <img src="img3/avatar_2.png" alt="">
         </div>
         <div class="rita">
-            <div>
-                <h4>Rita Smith</h4>
-                <p>4 hours ago</p>
-            </div>
-            <p>Я смотрю, вы тоже из Англии!</p>
             <div></div>
-            <img src="img3/avatar_4.png" alt="">
+            <p>Я смотрю, вы тоже из Англии!</p>
+            <div class="brown">
+                <img src="img3/avatar_4.png" alt="">
+                <div>
+                    <h4>Rita Brown</h4>
+                    <h5>4 hours ago</h5>
+                </div>
+            </div>
         </div>
         <div class="anni">
-            <div>
-                <h4>Anni Smith</h4>
-                <p>4 hours ago</p>
+            <div class="smith">
+                <div>
+                    <h4>Anni Smith</h4>
+                    <h5>4 hours ago</h5>
+                </div>
+                <img src="img3/avatar_2.png" alt="">
             </div>
             <p>London is the capital of great Britan!</p>
             <div></div>
-            <img src="img3/avatar_2.png" alt="">
         </div>
         <div class="rita">
-            <img src="img3/avatar_4.png" alt="">
-            <div>
-                <h4>Rita Smith</h4>
-                <p>4 hours ago</p>
-            </div>
+            <div></div>
             <p>Я смотрю, вы тоже из Англии!</p>
-            <div></div>
-        </div>
-        <div class="anni">
-            <div>
-                <h4>Anni Smith</h4>
-                <p>4 hours ago</p>
+            <div class="brown">
+                <img src="img3/avatar_4.png" alt="">
+                <div>
+                    <h4>Rita Brown</h4>
+                    <h5>4 hours ago</h5>
+                </div>
             </div>
-            <p>London is the capital of great Britan!</p>
-            <div></div>
-            <img src="img3/avatar_2.png" alt="">
         </div>
+            <div class="anni">
+                <div class="smith">
+                    <div>
+                        <h4>Anni Smith</h4>
+                        <h5>4 hours ago</h5>
+                    </div>
+                    <img src="img3/avatar_2.png" alt="">
+                </div>
+                <p>London is the capital of great Britan!</p>
+                <div></div>
+            </div>
         <div class="rita">
-            <div>
-                <h4>Rita Smith</h4>
-                <p>4 hours ago</p>
-            </div>
-            <p>Я смотрю, вы тоже из Англии!</p>
             <div></div>
-            <img src="img3/avatar_4.png" alt="">
+            <p>Я смотрю, вы тоже из Англии!</p>
+            <div class="brown">
+                <img src="img3/avatar_4.png" alt="">
+                <div>
+                    <h4>Rita Brown</h4>
+                    <h5>4 hours ago</h5>
+                </div>
+            </div>
         </div>
     </div>
 </body>
