@@ -51,6 +51,7 @@
     height: 640px;
     top: 0;
     color: white;
+    /* background-repeat: no-repeat; */
   }
 
   .block2 {
@@ -60,11 +61,17 @@
     align-items: center;
     height: 640px;
     color: white;
+    max-width: 1200px;
 
   }
 
   .red {
     position: relative;
+    background-image: url(img5/bigred.png) no-repeat;
+    width: 1140px;
+    height: 163px;
+    flex: 0 0 1140px;
+    bottom: 50%;
   }
 
   .position {
@@ -133,7 +140,10 @@
 
   .red4 {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .photo {
@@ -198,11 +208,28 @@
     transition: 1s;
   }
 
+  .redddd {
+    background: url(img5/redddd.png) center/contain no-repeat;
+    width: 226px;
+    height: 200px;
+    flex: 0 0 226px;
+  }
+
+  .redddd img {
+    transform: translate(38px, 18px);
+  }
+
+  .red_flex {
+    display: flex;
+    align-items: center;
+  }
+
   @media screen and (max-width: 1950px) {
     nav {
-      width: 2140px;
+      width: 1950px;
     }
   }
+
 </style>
 
 <body>
@@ -228,7 +255,7 @@
       </div>
       <div class="block2">
         <div class="red">
-          <img src="img5/bigred.png">
+
           <div class="position">
             <h1>Андеграунд</h1>
           </div>
@@ -291,33 +318,47 @@
       </div>
 
       <div class="block5">
-
         <div class="red3">
-          <img src="img5/bigred.png" alt="">
-          <div class="position">
             <h1 id="com">Наша команда</h1>
           </div>
         </div>
         <div class="red4">
-          <img src="img5/redddd.png" alt="">
-          <img src="img5/redddd.png" alt="">
-          <img src="img5/redddd.png" alt="">
-          <img src="img5/redddd.png" alt="">
-        </div>
-        <img src="img5/андрей.png" alt="">
-        <h2>Андрей</h2>
-        <p>Отлично смешивает ингридиенты и готовит лучшие молочные коктейли. </p>
-        <img src="img5/костян.png" alt="">
-        <h2>Костян</h2>
-        <p style="font-size: 24px; color: white;">Главный заводила в нашем антикафе. Без него не проходит ни одно мероприятие!</p>
-
-        <img src="img5/лера.png" alt="">
-        <h2>Лера</h2>
-        <p>Главный геймер. <br> Посоветует игру или фильм.</p>
-        <img src="img5/юля.png" alt="">
-        <h2>Юля</h2>
-        <p>Самая опытная. <br> Ответит на любой ваш вопрос.</p>
-
+          <div class="red_flex">
+            <div class="redddd">
+              <img src="img5/андрей.png" alt="">
+            </div>
+            <div>
+              <h2>Андрей</h2>
+              <p>Отлично смешивает ингридиенты и готовит лучшие молочные коктейли. </p>
+            </div>
+          </div>
+          <div class="red_flex">
+            <div class="redddd">
+              <img src="img5/костян.png" alt="">
+            </div>
+            <div>
+              <h2>Костян</h2>
+              <p>Главный заводила в нашем антикафе. Без него не проходит ни одно мероприятие!</p>
+            </div>
+          </div>
+          <div class="red_flex">
+            <div class="redddd">
+              <img src="img5/лера.png" alt="">
+            </div>
+            <div>
+              <h2>Лера</h2>
+              <p>Главный геймер. Посоветует игру или фильм.</p>
+            </div>
+          </div>
+          <div class="red_flex">
+            <div class="redddd">
+              <img src="img5/юля.png" alt="">
+            </div>
+            <div>
+              <h2>Юля</h2>
+              <p>Самая опытная. Ответит на любой ваш вопрос.</p>
+            </div>
+          </div>
       </div>
       <div class="block6">
         <h1 id="room">Наши комнаты</h1>
