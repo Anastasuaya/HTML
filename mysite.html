@@ -10,7 +10,7 @@
 <style>
   body {
     background-color: rgba(21, 18, 18, 1);
-    max-width: 2140px ;
+    max-width: 2140px;
   }
 
   .flex {
@@ -19,6 +19,7 @@
   }
 
   nav {
+
     text-transform: capitalize;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -118,6 +119,18 @@
     color: white;
   }
 
+  .red3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .position3 {
+    position: absolute;
+    right: 35%;
+    bottom: 15%;
+  }
+
   .photo {
     display: flex;
     align-items: center;
@@ -151,20 +164,27 @@
     align-items: center;
   }
 
-.cop {
-  display: flex;
-  flex-direction: column;
-}
+  .cop {
+    display: flex;
+    flex-direction: column;
+  }
 
-.right {
-padding: 15px;
-}
+  .right {
+    padding: 15px;
+  }
 
   h1 {
     font-size: 54px;
+    color: white;
   }
 
-  @media screen and (max-width: 2140px) {
+  a:hover {
+    text-transform: uppercase;
+    color: rgb(239, 192, 192);
+    transition: 1s;
+  }
+
+  @media screen and (max-width: 1950px) {
     nav {
       width: 2140px;
     }
@@ -234,7 +254,12 @@ padding: 15px;
       </div>
 
       <div class="block4">
-        <h1 id="photo" style="text-align: center;">Наши фотографии</h1>
+        <div class="red3">
+          <img src="img5/bigred.png" alt="">
+          <div class="position3">
+            <h1 id="photo">Наши фотографии</h1>
+          </div>
+        </div>
         <div class="photo">
           <img src="img4/pexels-andrea-piacquadio-927451 1.png">
           <img src="img4/pexels-kevin-malik-8762792 1.png" height="300px">
@@ -253,23 +278,27 @@ padding: 15px;
 
       <div class="block5">
         <h1 id="com">Наша команда</h1>
+        <img src="img5/bigred.png" alt="">
 
+
+        <img src="img5/redddd.png" alt="">
+        <img src="img5/redddd.png" alt="">
+        <img src="img5/redddd.png" alt="">
+        <img src="img5/redddd.png" alt="">
         <img src="img5/андрей.png" alt="">
         <h2>андрей</h2>
         <p>Отлично смешивает ингридиенты и готовит лучшие молочные коктейли. </p>
         <img src="img5/костян.png" alt="">
         <h2>Костян</h2>
         <p>Главный заводила в нашем антикафе. Без него не проходит ни одно мероприятие!</p>
-        <img src="img5/redddd.png" alt="">
-        <img src="img5/redddd.png" alt="">
+
         <img src="img5/лера.png" alt="">
         <h2 style="color: white;">Лера</h2>
         <p style="font-size: 24px; color: white;">Главный геймер. <br> Посоветует игру или фильм.</p>
         <img src="img5/юля.png" alt="">
         <h2 style="color: white;">Юля</h2>
         <p style="font-size: 24px; color: white;">Самая опытная. <br> Ответит на любой ваш вопрос.</p>
-        <img src="img5/redddd.png" alt="">
-        <img src="img5/redddd.png" alt="">
+
       </div>
       <div class="block6">
         <h1 id="room">Наши комнаты</h1>
@@ -300,18 +329,18 @@ padding: 15px;
         <div class="footer">
           <div class="copyright">
             <div class="cop">
-                <p>Андеграунд</p>
-            <p>8(900)354-43-73</p>
-            <p>©2024</p>
+              <p>Андеграунд</p>
+              <p>8(900)354-43-73</p>
+              <p>©2024</p>
             </div>
-          
+
             <div class="right">
-            <img src="img5/inst.png" alt="">
-            <img src="img5/fbbb.png" alt="">
-            <img src="img5/vkvk.png" alt="">
+              <img src="img5/inst.png" alt="">
+              <img src="img5/fbbb.png" alt="">
+              <img src="img5/vkvk.png" alt="">
+            </div>
           </div>
-          </div>
-          
+
         </div>
 
       </footer>
