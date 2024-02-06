@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  body {
+    background-color: rgba(21, 18, 18, 1);
+    max-width: 2140px;
+  }
+
+  nav {
+
+    text-transform: capitalize;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(5, 5, 5);
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 1340px;
+    z-index: 2;
+  }
+
+  nav ul {
+    list-style: none;
+    gap: 10px;
+  }
+
+  nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-transform: uppercase;
+    color: rgb(239, 192, 192);
+    transition: 1s;
+  }
+</style>
+
 <body>
-  
+  <div>
+    <header>
+      <nav>
+        <ul class="flex">
+          <li style="text-transform: uppercase;">Андеграунд</li>
+          <li><a href="#photo">Фото</a></li>
+          <li><a href="#com">Команда</a></li>
+          <li><a href="#room">Комнаты</a></li>
+          <li><a href="#otz">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li>8(900)354-43-73</li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 </body>
+
 </html>
