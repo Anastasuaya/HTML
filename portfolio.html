@@ -1,42 +1,105 @@
 <!DOCTYaE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewaort" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-.header {
-  display: flex;
-  justify-content: space-around;
-}
-</style>
-<body>
-  <!-- Шапка -->
-  <header class="header">
-    <a>Home</a>
-    <nav>
-      <a href="#Главная">Главная</a>
-      <a href="#Работы">Работы</a>
-      <a href="#Навыки">Навыки</a>
-      <a href="#Контакты">Контакты</a>
-    </nav>
-  </header>
-  <!-- Домашки -->
-  <div>
+  <html lang="en">
 
-  </div>
-  <!-- Навыки -->
-  <div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewaort" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(112, 65, 112);
+      color: white;
+    }
 
-  </div>
-  <!-- Контакты -->
-  <div>
+    nav {
+      text-transform: capitalize;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(69, 45, 69);
+      opacity: 0.8;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
 
-  </div>
-  <!-- Подвал -->
-  <footer>
-    
-  </footer>
-</body>
-</html>
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      gap: 10px;
+    }
+
+    nav a {
+      text-transform: capitalize;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: rgb(204, 238, 49);
+      transition: 1.5s;
+    }
+
+    .block {
+      height: 950px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .lorem {
+      height: 50%;
+      width: 40%;
+      font-size: 30px;
+      padding-left: 20px;
+    }
+
+    .bottom {
+      border: 2px solid rgb(204, 238, 49);
+      border-radius: 5px;
+      padding: 20px 30px 20px 30px;
+      text-decoration: none;
+      color: white;
+      margin: 20px;
+    }
+
+  .bottom:hover {
+    border: 2px solid rgb(69, 45, 69);
+    background-color: rgb(204, 238, 49);
+    transition: 1.5s;
+    color: rgb(69, 45, 69);
+  }
+  </style>
+
+  <body>
+    <!-- Шапка -->
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li><a href="#Главная">Главная</a></li>
+          <li><a href="#">Работы</a></li>
+          <li><a href="#">Навыки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Главная -->
+    <div id="Главная" class="block">
+      <div class="lorem">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eius delectus voluptatem soluta totam? Ipsum
+          nesciunt iusto assumenda rem sequi excepturi rerum ex eligendi quibusdam debitis, numquam itaque aspernatur
+          optio.</p>
+      </div>
+      <div class="padding">
+        <a href="pomogite.html" class="bottom">Домашка</a>
+        <a href="practica.html" class="bottom">Практика</a>
+      </div>
+    </div>
+  </body>
+
+  </html>
