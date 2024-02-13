@@ -1,151 +1,105 @@
-<!DOCTYpE html>
-<html lang="en">
+<!DOCTYaE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Домашка</title>
-</head>
-<style>
-  body {
-    margin: 0 auto;
-    background: url(img/flowers.jpg);
-    background-repeat: no-repeat;
-    background-size: 3000px;
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewaort" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(112, 65, 112);
+      color: white;
+    }
+
+    nav {
+      text-transform: capitalize;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(69, 45, 69);
+      opacity: 0.8;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      gap: 10px;
+    }
+
+    nav a {
+      text-transform: capitalize;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: rgb(204, 238, 49);
+      transition: 1.5s;
+    }
+
+    .block {
+      height: 950px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .lorem {
+      height: 50%;
+      width: 40%;
+      font-size: 30px;
+      padding-left: 20px;
+    }
+
+    .bottom {
+      border: 2px solid rgb(204, 238, 49);
+      border-radius: 5px;
+      padding: 20px 30px 20px 30px;
+      text-decoration: none;
+      color: white;
+      margin: 20px;
+    }
+
+  .bottom:hover {
+    border: 2px solid rgb(69, 45, 69);
+    background-color: rgb(204, 238, 49);
+    transition: 1.5s;
+    color: rgb(69, 45, 69);
   }
+  </style>
 
-  .flex {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  h1 {
-    color: rgb(228, 187, 110);
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  }
-
-  .kryg {
-    width: 750px;
-    height: 750px;
-    background: rgb(247, 191, 109);
-    border: 2px solid rgb(204, 126, 10);
-    border-radius: 50%;
-    z-index: -1;
-    margin: 40px;
-    bottom: 90px;
-    position: fixed;
-    right: 0;
-    overflow: hidden;
-  }
-
-  .lel {
-    padding-top: 30px;
-    width: 750px;
-    height: 750px;
-  }
-
-  .bottom {
-
-    display: inline-block;
-    background-color: rgb(47, 77, 48);
-    padding: 15px;
-    border-radius: 5px;
-    color: rgb(253, 247, 247);
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  }
-
-
-  .bottom2 {
-
-    display: inline-block;
-    background-color: rgb(47, 77, 48);
-    padding: 15px;
-    border-radius: 5px;
-    color: rgb(253, 247, 247);
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin-left: 7px;
-  }
-
-  .flex1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  a:hover {
-    background-color: rgb(255, 219, 143);
-    color: black;
-    border: 3px rgb(255, 174, 0) solid;
-    transition: 1s;
-  }
-</style>
-
-<body>
-
-  <h1>Лелуш Британский повелевает посмотреть всю домашку</h1>
-
-  <div class="flex">
-
-
-    <div class="flex1">
-
-      <p class="text-aligin"><a class="bottom2" href="dz1.html">Домашнее задание 1</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz2.html">Домашнее задание 2</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz3.html">Домашнее задание 3</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz4.html">Домашнее задание 4</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz5.html">Домашнее задание 5</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz6card.html">Домашнее задание 6</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz7.html">Домашнее задание 7</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz8.html">Домашнее задание 8</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz9.html">Домашнее задание 9</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz10.html">Домашнее задание 10</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz11hello.html">Домашнее задание 11</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz12.html">Домашнее задание 12</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz13.html">Домашнее задание 13</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz14.html">Домашнее задание 14</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz15.html">Домашнее задание 15</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz16.html">Домашнее задание 16</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz17.html">Домашнее задание 17</a></p>
-      <p class="text-aligin"><a class="bottom2" href="dz18.html">Домашнее задание 18</a></p>
-
-
+  <body>
+    <!-- Шапка -->
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li><a href="#Главная">Главная</a></li>
+          <li><a href="#">Работы</a></li>
+          <li><a href="#">Навыки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Главная -->
+    <div id="Главная" class="block">
+      <div class="lorem">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eius delectus voluptatem soluta totam? Ipsum
+          nesciunt iusto assumenda rem sequi excepturi rerum ex eligendi quibusdam debitis, numquam itaque aspernatur
+          optio.</p>
+      </div>
+      <div class="padding">
+        <a href="pomogite.html" class="bottom">Домашка</a>
+        <a href="practica.html" class="bottom">Практика</a>
+      </div>
     </div>
+  </body>
 
-    <div class="flex2">
-
-      <p class="text-aligin"><a class="bottom" href="pz1.html">Практическое задание 1</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz2.html">Практическое задание 2</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz3.html">Практическое задание 3</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz4.html">Практическое задание 4</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz5.html">Практическое задание 5</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz6.html">Практическое задание 6</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz7.html">Практическое задание 7</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz8.html">Практическое задание 8</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz9.html">Практическое задание 9</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz10.html">Практическое задание 10</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz11clock.html">Практическое задание 11</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz12site.html">Практическое задание 12</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz13.html">Практическое задание 13</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz14.html">Практическое задание 14</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz15.html">Практическое задание 15</a></p>
-      <p class="text-aligin"><a class="bottom" href="pz16.html">Практическое задание 16 </a></p>
-      <p class="text-aligin"><a class="bottom" href="pz17dodel.html">Практическое заданиe 17(не готово) </a></p>
-
-    </div>
-    <div class="kryg">
-      <img class="lel" src="img/лелуш.png">
-    </div>
-
-
-  </div>
-</body>
-
-</html>
+  </html>
