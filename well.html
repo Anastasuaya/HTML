@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>День святого Валентина</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-image: url(https://img.freepik.com/premium-vector/heart-cartoon-character-seamless-pattern-pink-background-pixel-style_618978-1727.jpg?w=740);
+        background-size: cover;
+        background-position: center;
+        animation: gradient 10s ease infinite;
+      }
+      h1 {
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #valentine-question {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #yes-btn {
+        background-color: #f69;
+        color: #fff;
+      }
+      #no-btn {
+        background-color: #f69;
+        color: #fff;
+        margin-left: 10px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p id="valentine-question">Ты будешь моей валентинкой?</p>
+    <button id="yes-btn" class="btn">Да</button>
+    <button id="no-btn" class="btn">Нет</button>
+    <script>
+      document.getElementById("no-btn").addEventListener("click", function () {
+        var e = document.getElementById("no-btn"),
+          t = Math.floor(Math.random() * window.innerWidth),
+          n = Math.floor(Math.random() * window.innerHeight)
+        ;(e.style.position = "absolute"),
+          (e.style.left = t + "px"),
+          (e.style.top = n + "px")
+      }),
+        document
+          .getElementById("yes-btn")
+          .addEventListener("click", function () {
+            ;(document.getElementById("valentine-question").innerText =
+              "Ураа, спасибо!"),
+              (document.getElementById("yes-btn").style.display = "none"),
+              (document.getElementById("no-btn").style.display = "none")
+          })
+    </script>
+  </body>
+</html>
