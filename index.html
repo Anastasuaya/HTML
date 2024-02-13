@@ -50,6 +50,10 @@
       justify-content: center;
     }
 
+    .padding {
+      padding-top: 10px;
+    }
+
     .lorem {
       height: 50%;
       width: 40%;
@@ -74,9 +78,10 @@
     }
 
     .square {
-      width: 300px;
-      height: 300px;
+      width: 500px;
+      height: 500px;
       border: 2px solid rgb(204, 238, 49);
+      
     }
 
     .block1 {
@@ -111,33 +116,37 @@
         <ul>
           <li>Home</li>
           <li><a href="#Главная">Главная</a></li>
-          <li><a href="#">Работы</a></li>
-          <li><a href="#">Навыки</a></li>
+          <li><a href="#Работы">Работы</a></li>
+          <li><a href="#Навыки">Навыки</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <!-- Главная -->
     <div id="Главная" class="block">
-      <div class="lorem">
-        <h1>Lorem ipsum</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eius delectus voluptatem soluta totam? Ipsum
-          nesciunt iusto assumenda rem sequi excepturi rerum ex eligendi quibusdam debitis, numquam itaque aspernatur
-          optio.</p>
-      </div>
+      <div style="display: flex; justify-content: space-between;">
+        <div class="lorem">
+          <h1>Lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eius delectus voluptatem soluta totam? Ipsum
+            nesciunt iusto assumenda rem sequi excepturi rerum ex eligendi quibusdam debitis, numquam itaque aspernatur
+            optio.</p>
+          </div>
+          <div class="square">
+    
+          </div>
+        </div>
       <div class="padding">
         <a href="pomogite.html" class="bottom">Домашка</a>
         <a href="practica.html" class="bottom">Практика</a>
       </div>
-      <div class="square"></div>
     </div>
     <!-- Работы -->
 
-    <div class="block1">
+    <div id="Работы" class="block1">
           <h2 style="text-align: center; font-size: 50px;">Всё ещё впереди</h2>
     </div>
     <!-- Навыки -->
-    <div class="block2">
+    <div id="Навыки" class="block2">
       <h2 style="text-align: center; font-size: 50px;">Навыки</h2>
           <div>
       <h2>Html</h2>
