@@ -208,9 +208,10 @@
       padding: 20px;
       display: flex;
       width: 600px;
-      height: 400px;
+      height: 500px;
       justify-content: center;
       flex-wrap: wrap;
+      align-content: flex-start;
     }
 
     .input {
@@ -223,6 +224,30 @@
       width: 200px;
       height: 50px;
       border: 3px solid rgb(69, 45, 69);
+    }
+
+    .meil {
+      width: 400px;
+      height: 160px;
+      border: 3px solid rgb(69, 45, 69);
+    }
+
+    .button {
+      width: 100px;
+      height: 50px;
+      border: 3px solid rgb(69, 45, 69);
+      background-color: rgb(204, 238, 49);
+      margin: 10px;
+    }
+
+    .button:hover {
+      width: 100px;
+      height: 50px;
+      border: 3px solid rgb(69, 45, 69);
+      background-color: rgb(112, 65, 112);
+      transition: 1s;
+      color: white;
+      margin: 10px;
     }
 
     @media screen and (max-width:1400px) {
@@ -251,7 +276,7 @@
       }
 
       .block2 {
-        height: 600px;
+        /* height: 600px; */
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -285,7 +310,7 @@
           <li><a href="#Главная">Главная</a></li>
           <li><a href="#Работы">Работы</a></li>
           <li><a href="#Навыки">Навыки</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#Контакты">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -293,10 +318,8 @@
     <div id="Главная" class="block">
       <div style="display: flex; justify-content: space-between;">
         <div class="lorem">
-          <h1>Lorem ipsum</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eius delectus voluptatem soluta totam? Ipsum
-            nesciunt iusto assumenda rem sequi excepturi rerum ex eligendi quibusdam debitis, numquam itaque aspernatur
-            optio.</p>
+          <h1>Привет, я Настя</h1>
+          <p>Скоро здесь будет крутое описание, а пока предлагаю взглянуть на мои домашки (по желанию)</p>
         </div>
         <div class="square">
 
@@ -346,20 +369,25 @@
         </div>
       </div>
       <!-- Контакты -->
-      <div class="block3">
-        <h2 style="text-align: center; font-size: 50px;">Связаться со мной,</h2>
+      <div id="Контакты" class="block3">
+        <h2 style="text-align: center; font-size: 50px;">Связаться со мной</h2>
 
         <div class="card">
 
           <form action="form_resut.html">
-            <div>
+            <div style="height: 50px;">
               <input class="input" type="text" name="name" placeholder="Ваше имя">
             </div>
-            <div>
+            <div style="height: 50px; padding: 20px;">
               <input class="form" type="text" name="email" placeholder="Ваша почта">
-              <input class="form" type="tel" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" placeholder="Ваш телефон" required />
+              <input class="form" type="tel" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone"
+                placeholder="Ваш телефон" required />
             </div>
 
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <input class="meil" type="text" placeholder="Сообщение для меня">
+              <input class="button" type="submit" value="Отправить" />
+            </div>
           </form>
         </div>
 
