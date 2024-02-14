@@ -6,6 +6,7 @@
     <meta name="viewaort" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
     body {
       background-color: rgb(112, 65, 112);
@@ -108,7 +109,12 @@
     position: relative;
   }
 
-  
+  .progress-bar {
+    background: rgb(112, 65, 112);
+    /* background-color: rgb(69, 45, 69); */
+  }
+
+
 
   @media screen and (max-width:1400px) {
 
@@ -179,13 +185,26 @@
     <div id="Навыки" class="block2">
       <h2 style="text-align: center; font-size: 50px;">Навыки</h2>
           <div>
+      <h2>Делать домашки</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-label="Базовый пример" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h2>Ничего не делать</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-label="Базовый пример" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
       <h2>Html</h2>
       <div class="progress">
-
+        <div class="progress-bar" role="progressbar" style="width: 75%" aria-label="Базовый пример" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h2>Спать</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%" aria-label="Базовый пример" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
     </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 
   </html>
