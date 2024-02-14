@@ -6,7 +6,6 @@
     <meta name="viewaort" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   </head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
     body {
       background-color: rgb(112, 65, 112);
@@ -103,46 +102,178 @@
     }
 
     .progress {
-    width: 500px;
-    height: 50px;
-    border: 3px rgb(204, 238, 49) solid;
-    position: relative;
-  }
-
-  .progress-bar {
-    background: rgb(112, 65, 112);
-    /* background-color: rgb(69, 45, 69); */
-  }
-
-
-
-  @media screen and (max-width:1400px) {
-
-    .block {
-      height: 600px;
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
+      animation: progress linear 1.5s forwards;
+      width: 500px;
+      height: 50px;
+      border: 3px rgb(204, 238, 49) solid;
+      position: relative;
     }
 
-    .square {
-      width: 420px;
-      height: 420px;
-      border: 2px solid rgb(204, 238, 49);
-      transform: rotate(60deg);
+    @keyframes progress {
+      from {
+        border: 3px rgb(204, 238, 49) solid;
+      }
+
+      to {
+        border: 3px solid rgb(69, 45, 69);
+      }
+
     }
 
-    .block1 {
-      height: 600px;
+    .bar {
+      animation: barr linear 3s forwards;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(204, 238, 49);
+    }
+
+    @keyframes barr {
+      from {
+        left: 0;
+      }
+
+      to {
+        width: 50%;
+      }
+    }
+
+    .bar1 {
+      animation: bar1 linear 3s forwards;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(204, 238, 49);
+    }
+
+    @keyframes bar1 {
+      from {
+        left: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    .bar2 {
+      animation: bar2 linear 3s forwards;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(204, 238, 49);
+    }
+
+    @keyframes bar2 {
+      from {
+        left: 0;
+      }
+
+      to {
+        width: 75%;
+      }
+    }
+
+    .bar3 {
+      animation: bar3 linear 3s forwards;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(204, 238, 49);
+    }
+
+    @keyframes bar3 {
+      from {
+        left: 0;
+      }
+
+      to {
+        width: 60%;
+      }
+    }
+
+    .block3 {
+      height: 950px;
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
     }
 
-  }
+    .card {
+      display: flex;
+      width: 700px;
+      height: 500px;
+      background-color: rgb(204, 238, 49);
+      border: 3px solid rgb(69, 45, 69);
+    }
 
+    form {
+      padding: 20px;
+      display: flex;
+      width: 600px;
+      height: 400px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .input {
+      width: 400px;
+      height: 50px;
+      border: 3px solid rgb(69, 45, 69);
+    }
+
+    .form {
+      width: 200px;
+      height: 50px;
+      border: 3px solid rgb(69, 45, 69);
+    }
+
+    @media screen and (max-width:1400px) {
+
+      .block {
+        height: 600px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .square {
+        width: 420px;
+        height: 420px;
+        border: 2px solid rgb(204, 238, 49);
+        transform: rotate(60deg);
+      }
+
+      .block1 {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .block2 {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .block3 {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .card {
+        display: flex;
+        width: 600px;
+        height: 400px;
+        background-color: rgb(204, 238, 49);
+        border: 3px solid rgb(69, 45, 69);
+      }
+    }
   </style>
 
   <body>
@@ -166,11 +297,11 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eius delectus voluptatem soluta totam? Ipsum
             nesciunt iusto assumenda rem sequi excepturi rerum ex eligendi quibusdam debitis, numquam itaque aspernatur
             optio.</p>
-          </div>
-          <div class="square">
-    
-          </div>
         </div>
+        <div class="square">
+
+        </div>
+      </div>
       <div class="padding">
         <a href="pomogite.html" class="bottom">Домашка</a>
         <a href="practica.html" class="bottom">Практика</a>
@@ -179,32 +310,60 @@
     <!-- Работы -->
 
     <div id="Работы" class="block1">
-          <h2 style="text-align: center; font-size: 50px;">Всё ещё впереди</h2>
+      <h2 style="text-align: center; font-size: 50px;">Всё ещё впереди...</h2>
     </div>
     <!-- Навыки -->
     <div id="Навыки" class="block2">
-      <h2 style="text-align: center; font-size: 50px;">Навыки</h2>
-          <div>
-      <h2>Делать домашки</h2>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 25%" aria-label="Базовый пример" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      <h2 style="text-align: center; font-size: 50px; margin: 10px;">Навыки</h2>
+      <div>
+        <h2>Делать домашки</h2>
+        <div class="div">
+          <div class="progress">
+            <div class="bar">
+            </div>
+          </div>
+        </div>
+        <h2>Ничего не делать</h2>
+        <div class="div">
+          <div class="progress">
+            <div class="bar1">
+            </div>
+          </div>
+        </div>
+        <h2>Html</h2>
+        <div class="div">
+          <div class="progress">
+            <div class="bar2">
+            </div>
+          </div>
+        </div>
+        <h2>Спать</h2>
+        <div class="div">
+          <div class="progress">
+            <div class="bar3">
+            </div>
+          </div>
+        </div>
       </div>
-      <h2>Ничего не делать</h2>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 50%" aria-label="Базовый пример" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <h2>Html</h2>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 75%" aria-label="Базовый пример" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <h2>Спать</h2>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 100%" aria-label="Базовый пример" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-    </div>
-    </div>
+      <!-- Контакты -->
+      <div class="block3">
+        <h2 style="text-align: center; font-size: 50px;">Связаться со мной,</h2>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <div class="card">
+
+          <form action="form_resut.html">
+            <div>
+              <input class="input" type="text" name="name" placeholder="Ваше имя">
+            </div>
+            <div>
+              <input class="form" type="text" name="email" placeholder="Ваша почта">
+              <input class="form" type="tel" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" placeholder="Ваш телефон" required />
+            </div>
+
+          </form>
+        </div>
+
+      </div>
   </body>
 
   </html>
