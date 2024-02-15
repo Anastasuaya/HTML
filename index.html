@@ -250,6 +250,40 @@
       margin: 10px;
     }
 
+    .footer {
+      display: flex;
+      color: white;
+      margin: 20px auto;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    footer {
+      height: 100px;
+      width: 2140px;
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
+
+    button {
+      height: 50px;
+      width: 100px;
+      border: 3px solid rgb(69, 45, 69);
+      background-color: rgb(112, 65, 112);
+      color: white;
+      text-decoration: none;
+    }
+
+    button:hover {
+      height: 50px;
+      width: 100px;
+      border: 3px solid rgb(69, 45, 69);
+      background-color: rgb(204, 238, 49);
+      color: white;
+      text-decoration: none;
+      transition: 1.5s;
+    }
+
     @media screen and (max-width:1400px) {
 
       .block {
@@ -298,6 +332,22 @@
         background-color: rgb(204, 238, 49);
         border: 3px solid rgb(69, 45, 69);
       }
+
+      .footer {
+        display: flex;
+        color: white;
+        margin: 20px auto;
+        justify-content: space-around;
+        align-items: center;
+
+      }
+
+      footer {
+      height: 100px;
+      width: 1300px;
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
     }
   </style>
 
@@ -390,7 +440,12 @@
             </div>
           </form>
         </div>
-
+        <footer>
+          <div class="footer">
+            <p>copyright 2024.</p>
+            <button><a href="#Главная"><span>&#9650;</span></a></button>
+          </div>
+        </footer>
       </div>
   </body>
 
