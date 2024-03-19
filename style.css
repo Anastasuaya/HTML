@@ -135,16 +135,19 @@ body {
   .green {
     display: flex;
     flex-direction: column;
+    padding: 60px;
   }
 
   .perple {
     display: flex;
     flex-direction: column;
+    padding: 60px;
   }
 
   .blue {
     display: flex;
     flex-direction: column;
+    padding: 60px;
   }
 
   .room {
@@ -157,7 +160,6 @@ body {
     padding-top: 140px;
     padding-left: 35px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
   }
 
@@ -227,7 +229,7 @@ body {
     height: 940px;
     color: white;
     display: flex;
-    padding-top: 70px;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
